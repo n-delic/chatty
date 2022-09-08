@@ -1,17 +1,20 @@
 <template>
-    <header class="fixed top-0 w-full bg-indigo py-4">
+    <header class="fixed top-0 w-full z-10 bg-indigo py-4">
         <div class="container flex items-center justify-between mx-auto">
-            <img class="h-12" src="../assets/logo.svg" />
+            <RouterLink to="/">
+                <img class="h-12" src="../assets/logo.svg" />
+            </RouterLink>
+            
             <div class="space-x-4">
 
                 <RouterLink to="/login">
                     <span
-                        class="rounded-full bg-slightDarkBlue py-2 px-4 font-semibold cursor-pointer text-white">Login</span>
+                        class="rounded-full transition-colors bg-slightDarkBlue hover:bg-[#48cae4] py-2 px-4 font-semibold cursor-pointer text-white">Login</span>
                 </RouterLink>
 
                 <RouterLink to="/register">
                     <span
-                        class="rounded-full bg-slightDarkBlue  py-2 px-4 font-semibold cursor-pointer text-white">Register</span>
+                        class="rounded-full transition-colors bg-slightDarkBlue hover:bg-[#48cae4]  py-2 px-4 font-semibold cursor-pointer text-white">Register</span>
                 </RouterLink>
 
             </div>
@@ -27,7 +30,7 @@
 
         </div>
     </header>
-    <main class="bg-slightDarkBlue flex place-items-center justify-center h-screen p-8">
+    <main class="bg-slightDarkBlue h-screen flex place-items-center justify-center pt-24 p-8">
         <RouterView />
     </main>
 </template>

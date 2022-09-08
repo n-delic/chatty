@@ -1,3 +1,10 @@
 <template>
-    <h1 class="font-bold text-white text-7xl">Welcome to <img class="h-72" src="../assets/logo.svg" alt="" srcset=""></h1>
+    <Card title="Welcome to Chatty!">
+        This is a chat app I think, let's try it out
+    </Card>
 </template>
+
+<script setup lang="ts">
+import Card from '@/components/Card.vue';
+    
+</script>
