@@ -11,7 +11,7 @@
                 <input class="p-2 border-2 shadow-lg rounded-md" type="password">
             </div>
 
-            <div class="button cursor-pointer bg-slightDarkBlue hover:bg-indigo rounded-lg py-2 px-4 text-white shadow-md">
+            <div class="button cursor-pointer bg-teritary hover:bg-fourth hover:bg-indigo rounded-lg py-2 px-4 text-white shadow-md">
                 Login
             </div>
             

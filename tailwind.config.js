@@ -9,9 +9,11 @@ module.exports = {
       padding: '2rem',
     },
     colors: {
-      'indigo': '#03045e',
-      'darkBlue': '#023e8a',
-      'slightDarkBlue': '#0077b6',
+      'primary': '#ffffff',
+      'secondary': '#003049',
+      'teritary': '#d62828',
+      'fourth': '#9d0208',
+      'shadow': '#7d7d7d',
       'white': '#ffffff'
     },
     extend: {
