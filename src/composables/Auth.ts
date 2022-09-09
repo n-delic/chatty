@@ -22,8 +22,9 @@ const useAuth = () => {
       });
 
       return true;
-    } catch (e) {
-      console.error("error adding document", e);
+    } catch (e: any) {
+      errMsg.value = e.code;
+      console.error("error adding document", e.code);
     }
   };
 

@@ -57,7 +57,7 @@ const state = reactive({
     confirmPassword: ''
 });
 
-const passwordValid = (value: string) => value.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/)?.length;
+const passwordValid = helpers.regex(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/);
 const passwordRef = computed(()=>state.password);
 
 const rules = {
